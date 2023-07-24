@@ -1,16 +1,35 @@
 body {
+
+
+
+ 
 }
+img{
+  width: 100%;
+
+}
+
+
+
 .main-page {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+
+
 }
 .main-title {
   display: flex;
   justify-content: center;
+  color: white;
+  
+ 
 }
 nav {
   display: flex;
   justify-content: center;
+
 }
 
 .navbar-list {
@@ -21,4 +40,14 @@ nav {
 .navbar-list li {
   display: inline-block;
   margin-right: 20px;
+  color: white;
+}
+.main-page-middle{
+  display: flex;
+  flex-direction:row;
+  margin-top: 3em;
+  background-color: gray;
+  width: 600px;
+  height: 200px;
+  margin-right: 4em;
 }
