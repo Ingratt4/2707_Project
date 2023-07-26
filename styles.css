@@ -25,7 +25,7 @@ header {
   width: 500px;
   font-size: 36px;
   justify-content: center;
-  opacity: 1;
+  opacity: 0;
   animation: fadeInAnimation 1s ease forwards;
   animation-delay: 1.5s;
 }
@@ -42,6 +42,7 @@ header {
   background-size: 1400px, 800px;
   background-repeat: no-repeat;
 }
+
 .main-title {
   display: flex;
   color: white;
@@ -91,23 +92,23 @@ nav {
   color: white;
 }
 .about-me {
-  opacity: 1;
+  opacity: 0;
   animation: fadeInAnimation 2s ease forwards;
   animation-delay: 4s;
 }
 .about-me-welcome {
-  opacity: 1;
+  opacity: 0;
   animation: fadeInAnimation 2s ease forwards;
   animation-delay: 8s;
 }
 .about-me-sentence {
-  opacity: 1;
+  opacity: 0;
   animation: fadeInAnimation 2s ease forwards;
   animation-delay: 6s;
 }
 .about-me-scroll {
   margin-left: 20px;
-  opacity: 1;
+  opacity: 0;
   animation: fadeInAnimation 2s ease forwards;
   animation-delay: 9.5s;
 }
@@ -187,9 +188,34 @@ a {
   animation: blink-caret 0.75s step-end infinite;
   color: white;
 }
-
-a:active {
+s a:active {
   text-decoration: none;
+}
+#resume-pic {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 9s;
+}
+#about-me {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 9.3s;
+}
+#skills {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 9.6s;
+}
+#projects {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 9.9s;
+}
+
+#email-pic {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 10.2s;
 }
 
 @keyframes fadeInAnimation {
