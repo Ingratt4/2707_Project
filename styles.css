@@ -10,20 +10,14 @@ Chinese white #E1E1E1
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lisu Bosa', serif;
+  font-family: "Lisu Bosa", serif;
 }
-img {
+
+header {
   width: 100%;
-  height: 100%;
 }
-header{
-  width:100%;
-}
-.img-container {
-  width: 100%;
-  height: 300px;
-}
-.greeting{
+
+.greeting {
   display: flex;
   margin: auto;
   margin-top: 4em;
@@ -31,7 +25,7 @@ header{
   width: 500px;
   font-size: 36px;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   animation: fadeInAnimation 1s ease forwards;
   animation-delay: 1.5s;
 }
@@ -41,13 +35,12 @@ header{
   flex-direction: column;
   align-items: center;
   background-color: #1b1b1b;
-  height: 1300px;
+  height: 1500px;
 }
 .main-title {
   display: flex;
   color: white;
   margin-left: 3em;
-
 }
 nav {
   display: flex;
@@ -72,32 +65,152 @@ nav {
   height: 200px;
   margin-right: 4em;
 }
-.main-page-middle p{
-  color:#f3f3f3;
+.main-page-middle p {
+  color: #f3f3f3;
   font-size: 24px;
 }
 .main-page-bottom {
   height: 400px;
-  background-color: #f3f3f3;
+  background-color: #1b1b1b;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15rem;
+}
+.navbar-list li {
+  margin-right: 4rem;
+  font-size: 30px;
+}
+.navbar-list li a {
+  color: white;
 }
 .about-me {
-  opacity: 0;
+  opacity: 1;
   animation: fadeInAnimation 2s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
-.about-me-welcome{
-  opacity: 0;
+.about-me-welcome {
+  opacity: 1;
+  animation: fadeInAnimation 2s ease forwards;
+  animation-delay: 8s;
+}
+.about-me-sentence {
+  opacity: 1;
   animation: fadeInAnimation 2s ease forwards;
   animation-delay: 6s;
-
 }
-.about-me-scroll{
-  opacity: 0;
+.about-me-scroll {
+  margin-left: 20px;
+  opacity: 1;
   animation: fadeInAnimation 2s ease forwards;
-  animation-delay: 7s;
+  animation-delay: 9.5s;
 }
-.about-me-p-container{
+.about-me-p-container {
   display: inline-flex;
+}
+.about-me-box-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Set the text color inside the box */
+  font-size: 16px; /* Set the font size for the content inside the box */
+  width: 1000px;
+  height: 500px;
+}
+.skills-box-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Set the text color inside the box */
+  font-size: 16px; /* Set the font size for the content inside the box */
+  width: 1000px;
+  height: 500px;
+}
+.resume-box-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Set the text color inside the box */
+  font-size: 16px; /* Set the font size for the content inside the box */
+  width: 1000px;
+  height: 500px;
+}
+.contact-box-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Set the text color inside the box */
+  font-size: 16px; /* Set the font size for the content inside the box */
+  width: 1000px;
+  height: 500px;
+}
+.projects-box-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Set the text color inside the box */
+  font-size: 16px; /* Set the font size for the content inside the box */
+  width: 1000px;
+  height: 500px;
+}
+.skills-box-content.visible {
+  display: block;
+}
+
+.about-me-box-content.visible {
+  display: block;
+}
+.resume-box-content.visible {
+  display: block;
+}
+.projects-box-content.visible {
+  display: block;
+}
+.contact-box-content.visible {
+  display: block;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.box-content {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  word-wrap: break-word;
+}
+.box-content p {
+  border-right: 0.15em solid #ffffff; /* The white blinking cursor */
+  animation: blink-caret 0.75s step-end infinite;
+  color: white;
+}
+.computer-image {
+  height: 400px;
+  width: 1500px;
+  background-image: url("/imgs/white-monitor.png");
+}
+
+a:active {
+  text-decoration: none;
 }
 
 @keyframes fadeInAnimation {

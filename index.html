@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@300;400&display=swap" rel="stylesheet"> 
-  <title>Portfolio</title>
-</head>
-<body>
-  <div class="main-page">
-    <header>
-      <div class="main-page-top">
-        <h1 class="main-title">Cameron Ingratta</h1>
-        <h1 class="greeting">Hello World! </h1>
-      </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="main-page">
+      <header>
+        <div class="main-page-top">
+          <h1 class="greeting">Hello World!</h1>
+        </div>
+      </header>
 
-    <div class="main-page-middle">
-      <div class="about-me">
-        <p>My name is Cameron.</p>
-        <p>I will be graduating with a degree in computer science in April 2024.</p>
-        <div class = "about-me-p-container">
-          <p class ="about-me-welcome">Welcome to my portfolio.</p><p class ="about-me-scroll">(Scroll down)</p>
+      <div class="main-page-middle">
+        <div class="about-me">
+          <p>My name is Cameron.</p>
+          <p class="about-me-sentence">
+            I will be graduating with a degree in computer science in April
+            2024.
+          </p>
+          <div class="about-me-p-container">
+            <p class="about-me-welcome">Welcome to my portfolio.</p>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1fTq-4ZJIR9ky5mVC8k_yXWSHSL8fKw0rLxM9Qnvx3dE/edit?usp=sharing"
+            >
+              <img src="/imgs/resume.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" id="about-me" onclick="toggleBoxContent();"
+              >/About_me</a
+            >
+          </li>
+          <li>
+            <a href="#" id="skills" onclick="toggleBoxContent();">/Skills</a>
+          </li>
+          <li>
+            <a href="#" id="projects" onclick="toggleBoxContent();"
+              >/Projects</a
+            >
+          </li>
+          <li>
+            <a href="mailto: cameroningratta@hotmail.com">
+              <img src="/imgs/email.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="computer-image">
+        <div class="about-me-box-content hidden">
+          <h2>About Me</h2>
+          <p class="box-content">
+            My name is Cameron Ingratta and I will soon be graduating from the
+            University of Windsor with a degree in Computer Science. I enjoy
+            solving problems through programming and also enjoy web development.
+          </p>
+        </div>
+        <div class="skills-box-content hidden">
+          <h2>Skills</h2>
+          <p class="box-content">
+            Java, C, C++, Javascript, HTML/CSS, React, MySQL.
+          </p>
+        </div>
+        <div class="projects-box-content hidden">
+          <h2>Projects</h2>
+          <p class="box-content">
+            I have created many projects throughout my time in school
+            independently and in groups. I also have created a few projects in
+            my free time independently. They can be viewed on my Github!
+          </p>
+        </div>
+        <div class="resume-box-content hidden">
+          <h2>Resume</h2>
+          <p></p>
+        </div>
+        <div class="contact-box-content hidden">
+          <h2>Contact Info</h2>
+          <p>
+            I can be reached via email
+            <a href="mailto: abc@example.com">Send Email</a>
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="img-container"><img src="/imgs/divider.png" /></div>
-  <div class="main-page-bottom"></div>
-  <script>
-    // JavaScript code to add the animation class after a short delay
-    const aboutMeElement = document.querySelector(".about-me");
 
-    function addAnimationClass() {
-      aboutMeElement.classList.add("fade-in");
-    }
-
-    // Add the animation class after a delay of 1 second (1000 milliseconds)
-    setTimeout(addAnimationClass, 1000);
-  </script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
-<!-- <nav>
-  <ul class="navbar-list">
-    <li><a href=""></a>About me</li>
-    <li><a href=""></a>Skills</li>
-    <li><a href=""></a>Projects</li>
-    <li><a href=""></a>Resume</li>
-    <li><a href=""></a>Contact info</li>
-  </ul>
-</nav> -->
